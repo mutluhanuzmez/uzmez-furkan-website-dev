@@ -1,3 +1,10 @@
-Proudly powered by [Gatsby](https://www.gatsbyjs.org/) 🚀
-With the help of awesome apps: [squoosh.app](https://squoosh.app) and [remove.bg](https://www.remove.bg/) 🖼️
-Deployed via [Netlify](https://www.netlify.com/) 🌐
+Before be sure that npm has the latest version!!!
+
+To install the gatsby environment
+```npm install -g gatsby cli```
+
+After than open the terminal in project folder and run the below command
+```npm install```
+
+To run the project
+```npm start```
