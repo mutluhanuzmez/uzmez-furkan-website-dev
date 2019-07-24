@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: 'Furkan Üzmez',
-    description: 'Engineer',
+    description: 'E&E Engineer,Ms.Eng Student-IT',
     author: '@uzmezfurkan',
     navLinks: [
       { name: 'About Me', path: '/' },
-      { name: 'Relevant Experience', path: '/relevant-experience' },
-      { name: 'Showcase', path: '/showcase' },
-      { name: 'Talks & OSS', path: '/talks-open-source' },
+      { name: 'Experience', path: '/relevant-experience' },
+      { name: 'Memories', path: '/showcase' },
+      { name: 'Usefull', path: '/talks-open-source' },
     ],
   },
   plugins: [
