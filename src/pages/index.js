@@ -25,11 +25,11 @@ export default () => (
      I can work for this subjects,
     <li> Factory automation</li>
     <li> Web Applications for robots, industrial systems</li>
- 
     <li> Robot Vision
     <ul>
-      <li>Color Detection- OpenCV</li>
-      <li>Face Recognition</li>
+      <li>Color Detection</li>
+      <li>Material Sorting</li>
+      <li>Object Recognition</li>
     </ul></li>
     <li> Cryptography methods for Embedded system</li>
     <li> Electrical Power System Design</li>

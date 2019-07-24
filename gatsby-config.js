@@ -7,7 +7,7 @@ module.exports = {
       { name: 'About Me', path: '/' },
       { name: 'Experience', path: '/relevant-experience' },
       { name: 'Memories', path: '/showcase' },
-      { name: 'Usefull', path: '/talks-open-source' },
+      { name: 'Warehouse', path: '/talks-open-source' },
     ],
   },
   plugins: [
