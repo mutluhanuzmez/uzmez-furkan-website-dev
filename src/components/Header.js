@@ -44,7 +44,7 @@ const Header = ({ title, description, ...rest }) => (
       <Wrapper {...rest}>
         <StyledImg
           fixed={data.file.childImageSharp.fixed}
-          alt="Sylvain Hamann's portrait"
+          alt="Furkan Uzmez's portrait"
         />
         <div>
           <Title>{title}</Title>
