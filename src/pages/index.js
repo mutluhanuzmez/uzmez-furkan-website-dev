@@ -11,7 +11,7 @@ class Index extends React.Component {
     super();
     this.x = 80;
     this.y = 83;
-    this.objX = 256;
+    this.objX = 356;
     this.objY = 80;
     this.objectObtained = false;
     this.missionCompleted = false;
@@ -22,12 +22,11 @@ class Index extends React.Component {
 
   componentDidMount() {
     const c = this.canvasRef.current;
-    const ctx = c.getContext("2d");
     this.rAF = requestAnimationFrame(this.updateAnimationState);
   }
 
   updateAnimationState() {
-    this.setState(prevState => ({ angle: prevState.angle + 1 }));
+    this.setState(prevState => ({ angle: prevState.angle + 0.1 }));
     this.rAF = requestAnimationFrame(this.updateAnimationState);
   }
 
@@ -35,8 +34,7 @@ class Index extends React.Component {
     cancelAnimationFrame(this.rAF);
   }
 
-  componentDidUpdate(){
-    setTimeout(()=>{}, 30000000)
+  componentDidUpdate() {
     const c = this.canvasRef.current;
     const ctx = c.getContext("2d");
     const img = document.getElementById("mobilrobo");
@@ -46,7 +44,7 @@ class Index extends React.Component {
     ctx.drawImage(img, this.x, this.y, 64, 64);
     ctx.fillStyle = "red";
     ctx.fillRect(this.objX, this.objY, 20, 20);
-    if (this.x == 200 && !this.objectObtained) {
+    if (this.x == 300 && !this.objectObtained) {
       console.log("test1", !this.objectObtained);
       ctx.clearRect(0, 0, c.width, c.height);
       ctx.drawImage(img, this.x, this.y, 64, 64);
@@ -54,33 +52,40 @@ class Index extends React.Component {
       ctx.fillRect(this.objX, this.objY, 20, 20);
       this.objectObtained = true;
       // clearInterval(myVar);
-    } else if (this.x < 200 && !this.objectObtained) {
+    } else if (this.x < 300 && !this.objectObtained) {
       console.log("test2");
-      this.x = this.x + 5;
+      this.x = this.x + 1;
       ctx.clearRect(0, 0, c.width, c.height);
       ctx.drawImage(img, this.x, this.y, 64, 64);
       ctx.fillStyle = "red";
       ctx.fillRect(this.objX, this.objY, 20, 20);
-    } else if (this.objectObtained && this.x == 200) {
+    } else if (this.objectObtained && this.x == 300) {
       console.log("test3");
-      this.x = this.x - 5;
+      this.x = this.x - 1;
       this.objX = this.objX - 72;
       ctx.clearRect(0, 0, c.width, c.height);
       ctx.drawImage(imgFlip, this.x, this.y, 64, 64);
       ctx.fillStyle = "green";
       ctx.fillRect(this.objX, this.objY, 20, 20);
     } else if (this.x > 80 && this.objectObtained) {
-      this.x = this.x - 5;
-      this.objX = this.objX - 5;
+      this.x = this.x - 1;
+      this.objX = this.objX - 1;
       ctx.clearRect(0, 0, c.width, c.height);
       ctx.drawImage(imgFlip, this.x, this.y, 64, 64);
       ctx.fillStyle = "green";
       ctx.fillRect(this.objX, this.objY, 20, 20);
     } else if (this.x <= 80 && this.objectObtained) {
+      console.log("stop")
       ctx.clearRect(0, 0, c.width, c.height);
       ctx.drawImage(imgFlip, this.x, this.y, 64, 64);
       ctx.fillStyle = "green";
       ctx.fillRect(this.objX, this.objY, 20, 20);
+      this.x = 80;
+      this.y = 83;
+      this.objX = 356;
+      this.objY = 80;
+      this.objectObtained = false;
+      this.missionCompleted = false;
     }
 
     ctx.restore();
@@ -92,7 +97,7 @@ class Index extends React.Component {
       <div>
         <SEO title="About Me" keywords={['react', 'javascript', 'web']} />
         <Paragraph>
-          I am from Turkıye, I{' '}
+          I am from Turkey, I{' '}
           <span role="img" aria-label="horse">
             💖 🐬
           </span>{' '}
@@ -103,10 +108,17 @@ class Index extends React.Component {
         </Paragraph>
         <img id="mobilrobo" width="64" height="64" style={{ display: "none" }} src={require("../images/mobile.png")} alt="The Scream" />
         <img id="mobilroboFlip" width="64" height="64" style={{ display: "none" }} src={require("../images/mobileFlip.png")} alt="The Scream" />
-        <canvas ref ={this.canvasRef} id="myCanvas" width="512" height="256" style={{
-          border: 1,
-          backgroundColor: "#d3d3d3"
-        }}></canvas>
+        <div style={{
+          justifyContent: 'center',
+          alignItems: 'center',
+          display: 'flex'
+        }}>
+          <canvas ref={this.canvasRef} id="myCanvas" width="512rem" height="256" style={{
+            border: 1,
+            backgroundColor: "#f1f1f1",
+          }}></canvas>
+        </div>
+
 
 
         <Paragraph>
