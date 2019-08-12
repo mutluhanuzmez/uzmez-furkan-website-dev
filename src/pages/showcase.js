@@ -2,7 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 import SEO from '../components/SEO';
-import collage from '../images/shamann-speaker.jpg';
+import re1 from '../images/re1.jpg';
+import re2 from '../images/re2.jpg';
+import re3 from '../images/re3.jpg';
+import re4 from '../images/re4.jpg';
+import re5 from '../images/re5.jpg';
+import re6 from '../images/re6.jpg';
+import re7 from '../images/re7.jpg';
 import Paragraph from '../components/shared/Paragraph';
 import Subtitle from '../components/shared/Subtitle';
 
@@ -37,7 +43,7 @@ export default () => (
         </tr>
         <Bordered>
           <td>
-            <Img width="312rem" height="312rem" src={collage} alt="Collage of several pictures taken at meetups" />
+            <Img width="312rem" height="312rem" src={re1} alt="Collage of several pictures taken at meetups" />
           </td>
           <td style={{
             paddingLeft: 15
@@ -70,7 +76,7 @@ export default () => (
             </Paragraph>
           </td>
           <td  style={{display: 'flex', justifyContent: 'center', alignItems: 'flex-end'}}>
-            <Img width={312} height={312} src={collage} alt="Collage of several pictures taken at meetups" />
+            <Img width={312} height={312} src={re2} alt="Collage of several pictures taken at meetups" />
           </td>
         </tr>
         <tr>
@@ -78,10 +84,19 @@ export default () => (
         </tr>
         <tr>
           <td>
-            <Img width={312} height={312} src={collage} alt="Collage of several pictures taken at meetups" />
+            <Img width={312} height={312} src={re3} alt="Collage of several pictures taken at meetups" />
           </td>
           <td>
-            <Img width={312} height={312} src={collage} alt="Collage of several pictures taken at meetups" />
+            <Img width={312} height={312} src={re4} alt="Collage of several pictures taken at meetups" />
+          </td>
+          <td>
+            <Img width={312} height={312} src={re5} alt="Collage of several pictures taken at meetups" />
+          </td>
+          <td>
+            <Img width={312} height={312} src={re6} alt="Collage of several pictures taken at meetups" />
+          </td>
+          <td>
+            <Img width={312} height={312} src={re7} alt="Collage of several pictures taken at meetups" />
           </td>
         </tr>
       </table>

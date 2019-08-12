@@ -9,8 +9,13 @@ export default () => (
     <Paragraph>
       I graduated from <em>Anadou University</em> in 2015. I have a
       Bachelor’s degree  in
-      Electric & Electronic Engineering and now <strong>I  am Master’s degree</strong> in
-      Information Technologies. During my studies, I have interned at TUSAS Engine Industry
+      Electric & Electronic Engineering and now <strong>I  am Master student</strong> in
+      Information Technologies SRH Heidelberg University Germany. During my studies, I have interned at TUSAS Engine Industry,
+       They are program contributor for F35 and A400M CARGO,
+  
+    </Paragraph>
+    <Paragraph>
+     
   
     </Paragraph>
     <Paragraph>
@@ -23,6 +28,11 @@ export default () => (
     <Paragraph>
       I alraedy developed construction progress web application => How it works   <Anchor href="https://drive.google.com/open?id=1Jj9YPL6iyke64KWFyOtGH31VTWwUPTsx">
         Google Drive
+      </Anchor>
+    </Paragraph>
+     <Paragraph>
+      Robotic arm , gymball,line follower robots -PID  <Anchor href="https://drive.google.com/open?id=1Jj9YPL6iyke64KWFyOtGH31VTWwUPTsx">
+       PID Control Explained!!
       </Anchor>
     </Paragraph>
     <Paragraph>

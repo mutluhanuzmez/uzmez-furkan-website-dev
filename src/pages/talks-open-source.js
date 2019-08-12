@@ -5,7 +5,6 @@ import SEO from '../components/SEO';
 import Paragraph from '../components/shared/Paragraph';
 import Anchor from '../components/shared/Anchor';
 
-import collage from '../images/shamann-speaker.jpg';
 
 const Img = styled.img`
   margin-right: 1rem;
@@ -21,10 +20,6 @@ const Img = styled.img`
 export default () => (
   <>
     <SEO title="Talks & Open Source" />
-    <Img width={256} height={256} src={collage} alt="Collage of several pictures taken at meetups" />
-    <h1>furkans</h1>
-     <Img width={256} height={256} src={collage} alt="Collage of several pictures taken at meetups" />
-     <h1>furkans</h1>
-      <Img width={256} height={256} src={collage} alt="Collage of several pictures taken at meetups" />
+    
   </>
 );
