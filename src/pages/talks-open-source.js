@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import SEO from '../components/SEO';
-import Paragraph from '../components/shared/Paragraph';
+import Subtitle from '../components/shared/Subtitle';
 import Anchor from '../components/shared/Anchor';
 
 
@@ -19,7 +19,9 @@ const Img = styled.img`
 
 export default () => (
   <>
-    <SEO title="Talks & Open Source" />
-    
+    <SEO title="My Writings" />
+    <Subtitle>
+      There will be my writings
+    </Subtitle>
   </>
 );

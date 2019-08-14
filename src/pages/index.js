@@ -5,6 +5,7 @@ import Paragraph from '../components/shared/Paragraph';
 import Anchor from '../components/shared/Anchor';
 import mobile from '../images/mobile.png'
 import mobileFlip from '../images/mobileFlip.png'
+import './index/index.css'
 
 class Index extends React.Component {
   constructor() {
@@ -18,11 +19,17 @@ class Index extends React.Component {
     this.canvasRef = React.createRef();
     this.state = { angle: 0 };
     this.updateAnimationState = this.updateAnimationState.bind(this);
+    this.motionFlag = true;
+    this.motionController = "Stop"
+    this.start = this.start.bind(this);
+    this.forFirstTime = true;
   }
 
   componentDidMount() {
     const c = this.canvasRef.current;
     this.rAF = requestAnimationFrame(this.updateAnimationState);
+    this.setState({ motionFlag: true })
+    this.setState({ motionController: "Stop Robot" })
   }
 
   updateAnimationState() {
@@ -40,57 +47,71 @@ class Index extends React.Component {
     const img = document.getElementById("mobilrobo");
     const imgFlip = document.getElementById("mobilroboFlip");
     ctx.save()
-    ctx.clearRect(0, 0, c.width, c.height);
-    ctx.drawImage(img, this.x, this.y, 64, 64);
-    ctx.fillStyle = "red";
-    ctx.fillRect(this.objX, this.objY, 20, 20);
-    if (this.x == 300 && !this.objectObtained) {
-      console.log("test1", !this.objectObtained);
-      ctx.clearRect(0, 0, c.width, c.height);
-      ctx.drawImage(img, this.x, this.y, 64, 64);
-      ctx.fillStyle = "green";
-      ctx.fillRect(this.objX, this.objY, 20, 20);
-      this.objectObtained = true;
-      // clearInterval(myVar);
-    } else if (this.x < 300 && !this.objectObtained) {
-      console.log("test2");
-      this.x = this.x + 1;
+
+    // console.log(this.state.motionFlag)
+    if (this.state.motionFlag) {
       ctx.clearRect(0, 0, c.width, c.height);
       ctx.drawImage(img, this.x, this.y, 64, 64);
       ctx.fillStyle = "red";
       ctx.fillRect(this.objX, this.objY, 20, 20);
-    } else if (this.objectObtained && this.x == 300) {
-      console.log("test3");
-      this.x = this.x - 1;
-      this.objX = this.objX - 72;
-      ctx.clearRect(0, 0, c.width, c.height);
-      ctx.drawImage(imgFlip, this.x, this.y, 64, 64);
-      ctx.fillStyle = "green";
-      ctx.fillRect(this.objX, this.objY, 20, 20);
-    } else if (this.x > 80 && this.objectObtained) {
-      this.x = this.x - 1;
-      this.objX = this.objX - 1;
-      ctx.clearRect(0, 0, c.width, c.height);
-      ctx.drawImage(imgFlip, this.x, this.y, 64, 64);
-      ctx.fillStyle = "green";
-      ctx.fillRect(this.objX, this.objY, 20, 20);
-    } else if (this.x <= 80 && this.objectObtained) {
-      console.log("stop")
-      ctx.clearRect(0, 0, c.width, c.height);
-      ctx.drawImage(imgFlip, this.x, this.y, 64, 64);
-      ctx.fillStyle = "green";
-      ctx.fillRect(this.objX, this.objY, 20, 20);
-      this.x = 80;
-      this.y = 83;
-      this.objX = 356;
-      this.objY = 80;
-      this.objectObtained = false;
-      this.missionCompleted = false;
+
+      if (this.x == 300 && !this.objectObtained) {
+
+        ctx.clearRect(0, 0, c.width, c.height);
+        ctx.drawImage(img, this.x, this.y, 64, 64);
+        ctx.fillStyle = "green";
+        ctx.fillRect(this.objX, this.objY, 20, 20);
+        this.objectObtained = true;
+        // clearInterval(myVar);
+      } else if (this.x < 300 && !this.objectObtained) {
+
+        this.x = this.x + 1;
+        ctx.clearRect(0, 0, c.width, c.height);
+        ctx.drawImage(img, this.x, this.y, 64, 64);
+        ctx.fillStyle = "red";
+        ctx.fillRect(this.objX, this.objY, 20, 20);
+      } else if (this.objectObtained && this.x == 300) {
+        this.x = this.x - 1;
+        this.objX = this.objX - 72;
+        ctx.clearRect(0, 0, c.width, c.height);
+        ctx.drawImage(imgFlip, this.x, this.y, 64, 64);
+        ctx.fillStyle = "green";
+        ctx.fillRect(this.objX, this.objY, 20, 20);
+      } else if (this.x > 80 && this.objectObtained) {
+        this.x = this.x - 1;
+        this.objX = this.objX - 1;
+        ctx.clearRect(0, 0, c.width, c.height);
+        ctx.drawImage(imgFlip, this.x, this.y, 64, 64);
+        ctx.fillStyle = "green";
+        ctx.fillRect(this.objX, this.objY, 20, 20);
+      } else if (this.x <= 80 && this.objectObtained) {
+
+        ctx.clearRect(0, 0, c.width, c.height);
+        ctx.drawImage(imgFlip, this.x, this.y, 64, 64);
+        ctx.fillStyle = "green";
+        ctx.fillRect(this.objX, this.objY, 20, 20);
+        this.x = 80;
+        this.y = 83;
+        this.objX = 356;
+        this.objY = 80;
+        this.objectObtained = false;
+        this.missionCompleted = false;
+      }
     }
+
 
     ctx.restore();
   }
 
+  start() {
+    if (!this.state.motionFlag) {
+      this.setState({ motionFlag: true })
+      this.setState({ motionController: "Stop Robot" })
+    } else {
+      this.setState({ motionFlag: false })
+      this.setState({ motionController: "Start Robot" })
+    }
+  }
 
   render() {
     return (
@@ -108,15 +129,18 @@ class Index extends React.Component {
         </Paragraph>
         <img id="mobilrobo" width="64" height="64" style={{ display: "none" }} src={require("../images/mobile.png")} alt="The Scream" />
         <img id="mobilroboFlip" width="64" height="64" style={{ display: "none" }} src={require("../images/mobileFlip.png")} alt="The Scream" />
-        <div style={{
+        <div id="container" style={{
           justifyContent: 'center',
           alignItems: 'center',
           display: 'flex'
         }}>
-          <canvas ref={this.canvasRef} id="myCanvas" width="512rem" height="256" style={{
+          <button id="controls" className={this.state.motionFlag ? "inMotion" : "inPosition"} type="button" onClick={this.start}>{this.state.motionController}</button>
+          <canvas ref={this.canvasRef} id="viewport" width="500rem" height="256" style={{
             border: 1,
             backgroundColor: "#f1f1f1",
           }}></canvas>
+          <menu>
+          </menu>
         </div>
 
 
