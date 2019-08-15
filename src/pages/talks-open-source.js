@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import SEO from '../components/SEO';
 import Subtitle from '../components/shared/Subtitle';
 import Anchor from '../components/shared/Anchor';
-
+import Paragraph from '../components/shared/Paragraph';
 
 const Img = styled.img`
   margin-right: 1rem;
