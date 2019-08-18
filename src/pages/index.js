@@ -118,12 +118,7 @@ class Index extends React.Component {
       <div>
         <SEO title="About Me" keywords={['react', 'javascript', 'web']} />
         <Paragraph>
-          I am from Turkey, I{' '}
-          <span role="img" aria-label="horse">
-            💖 🐬
-          </span>{' '}
-          the technology ,especially robotics , I interested so much and love motion
-          I already made many basic projects about automation and robotics,I learned many different system integration,
+          I follow the new developments and interested so much robotics. I already made many basic projects about automation and robotics,I learned many different system integration,
           From my bachelor I have several experience , I already joined 2 times AUVSI SUAS Competetion,
           I am now Master Student that completed my all lectures, I should start my master next october 2019  I am looking a company for my master thesis.
         </Paragraph>
@@ -135,7 +130,7 @@ class Index extends React.Component {
           display: 'flex'
         }}>
           <button id="controls" className={this.state.motionFlag ? "inMotion" : "inPosition"} type="button" onClick={this.start}>{this.state.motionController}</button>
-          <canvas ref={this.canvasRef} id="viewport" width="500rem" height="256" style={{
+          <canvas ref={this.canvasRef} id="viewport" width="500rem" height="150" style={{
             border: 1,
             backgroundColor: "#f1f1f1",
           }}></canvas>
