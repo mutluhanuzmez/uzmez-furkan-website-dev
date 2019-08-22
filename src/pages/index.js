@@ -11,9 +11,9 @@ class Index extends React.Component {
   constructor() {
     super();
     this.x = 80;
-    this.y = 83;
+    this.y = 13;
     this.objX = 356;
-    this.objY = 80;
+    this.objY = 10;
     this.objectObtained = false;
     this.missionCompleted = false;
     this.canvasRef = React.createRef();
@@ -91,9 +91,9 @@ class Index extends React.Component {
         ctx.fillStyle = "green";
         ctx.fillRect(this.objX, this.objY, 20, 20);
         this.x = 80;
-        this.y = 83;
+        this.y = 13;
         this.objX = 356;
-        this.objY = 80;
+        this.objY = 10;
         this.objectObtained = false;
         this.missionCompleted = false;
       }
@@ -130,7 +130,7 @@ class Index extends React.Component {
           display: 'flex'
         }}>
           <button id="controls" className={this.state.motionFlag ? "inMotion" : "inPosition"} type="button" onClick={this.start}>{this.state.motionController}</button>
-          <canvas ref={this.canvasRef} id="viewport" width="500rem" height="150" style={{
+          <canvas ref={this.canvasRef} id="viewport" width="500rem" height="80" style={{
             border: 1,
             backgroundColor: "#f1f1f1",
           }}></canvas>
@@ -141,7 +141,7 @@ class Index extends React.Component {
 
 
         <Paragraph>
-          I already studied Embedded Systems,Embedded Security,Real Time Programming,Robotics and Advanced Control,Image and Signal Processing during my Master education.
+          I already studied Embedded Systems, Embedded Security, Real Time Programming, Robotics and Advanced Control, Image and Signal Processing during my Master education.
         </Paragraph>
         <Paragraph>
           I can work for this subjects,

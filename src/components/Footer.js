@@ -15,7 +15,7 @@ export default () => (
       <Anchor href="https://www.linkedin.com/">LinkedIn</Anchor>
       .<br />
       You can also download it as PDF on{' '}
-      <Anchor href="https://docs.google.com">
+      <Anchor href="https://drive.google.com/open?id=164_UUh6k9XmjAKUso4f3k_Fv2rQ-PJaf">
         Google Drive
       </Anchor>
    
@@ -24,7 +24,7 @@ export default () => (
       .
       <br />
       See some of my code on{' '}
-      <Anchor href="https://github.com/anadolueem">GitHub</Anchor>.
+      <Anchor href="https://furkanuzmez.github.io/warehouse">GitHub</Anchor>.
     </Paragraph>
   </Footer>
 );

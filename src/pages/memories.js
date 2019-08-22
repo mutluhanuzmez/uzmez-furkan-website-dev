@@ -43,7 +43,7 @@ const Bordered = styled.tr`
 
 export default () => (
   <>
-    <SEO title="Showcase" />
+    <SEO title="Memories" />
 
     <table width="512rem">
       <tr>

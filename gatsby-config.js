@@ -5,9 +5,9 @@ module.exports = {
     author: '@uzmezfurkan',
     navLinks: [
       { name: 'About Me', path: '/' },
-      { name: 'Experience', path: '/relevant-experience' },
-      { name: 'Memories', path: '/showcase' },
-      { name: 'Warehouse', path: '/talks-open-source' },
+      { name: 'Experience', path: '/experience' },
+      { name: 'Memories', path: '/memories' },
+      { name: 'Warehouse', path: '/warehouse' },
     ],
   },
   plugins: [

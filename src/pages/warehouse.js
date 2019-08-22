@@ -19,19 +19,17 @@ const Img = styled.img`
 
 export default () => (
   <>
-    <SEO title="My Writings" />
+    <SEO title="Warehouse"/>
     <Subtitle>
       There will be my writings
     </Subtitle>
     <Paragraph>
      <Anchor href=" https://github.com/anadolueem/signaturecomparison/blob/master/sketch_190521a.pde">Signature Comparison</Anchor>
-        <br />
-      <Anchor href=" https://github.com/anadolueem/signaturecomparison/blob/master/sketch_190521a.pde">link1</Anchor>
-         <br />
-        <Anchor href=" https://github.com/anadolueem/signaturecomparison/blob/master/sketch_190521a.pde">link2</Anchor>
            <br />
-          <Anchor href=" https://github.com/anadolueem/signaturecomparison/blob/master/sketch_190521a.pde">link3</Anchor>
-             <br />
+      <Anchor href="https://github.com/mutluhanuzmez/uzmez-furkan-website-dev/blob/master/src/pages/index.js ">Canvas Robot</Anchor>
+           <br />
+ 
+            <br />
   
     </Paragraph>
   </>
