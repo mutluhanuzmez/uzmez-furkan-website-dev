@@ -15,12 +15,12 @@ export default () => (
 
     </Paragraph>
   <Paragraph>
-    • June 2015 : Fixed Wing- Training Aircraft ,6th Place in all category
+    •  AUVSI SUAS June 2015 : Fixed Wing- Training Aircraft ,6th Place in all category
        between 55 International Team.
     </Paragraph>
   <br />
   <Paragraph>
-    • June 2014 : Rotary Wing Hexa Copter, 23th Place in all category between
+    •  AUVSI SUAS June 2014 : Rotary Wing Hexa Copter, 23th Place in all category between
        48 International Team 2nd Place in rotary wing category.
        </Paragraph>
   <br />
