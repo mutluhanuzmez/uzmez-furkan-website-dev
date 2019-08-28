@@ -12,7 +12,7 @@ export default () => (
   <Footer>
     <Paragraph>
       View my complete resume on{' '}
-      <Anchor href="https://www.linkedin.com/">LinkedIn</Anchor>
+      <Anchor href="https://www.linkedin.com/in/furkan-uzmez-b3247310a/">LinkedIn</Anchor>
       .<br />
       You can also download it as PDF on{' '}
       <Anchor href="https://drive.google.com/open?id=164_UUh6k9XmjAKUso4f3k_Fv2rQ-PJaf">
