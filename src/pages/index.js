@@ -118,7 +118,7 @@ class Index extends React.Component {
       <div>
         <SEO title="About Me" keywords={['react', 'javascript', 'web']} />
         <Paragraph>
-          I follow the new developments and interested so much  Web Technologies,IOT,Industrie 4.0 and Robotics.I already made many basic projects about automation and robotics,I learned many different system integration,
+          I follow the new developments and interested so much  Web Technologies, IOT,Industrie 4.0 and Robotics.I already made many basic projects about automation and robotics,I learned many different system integration,
           From my bachelor I have several experience , I already joined 2 times AUVSI SUAS Competetion,
           I am now Master Student that completed my all lectures, I should start my master next october 2019  I am looking a company for my master thesis.
         </Paragraph>
