@@ -116,11 +116,10 @@ class Index extends React.Component {
   render() {
     return (
       <div>
-        <SEO title="About Me" keywords={['react', 'javascript', 'web']} />
+        <SEO title="Motivation" keywords={['react', 'javascript', 'web']} />
         <Paragraph>
-          I follow the new developments and interested so much  Web Technologies, IOT,Industrie 4.0 and Robotics.I already made many basic projects about automation and robotics,I learned many different system integration,
-          From my bachelor I have several experience , I already joined 2 times AUVSI SUAS Competetion,
-          I am now Master Student that completed my all lectures, I should start my master next october 2019  I am looking a company for my master thesis.
+         I follow the new developments and interested so much Web Technologies, IoT, Industrie 4.0 and Robotics. I already made many basic projects about automation and robotics,I learned many different system integrations, From my bachelor, I have several experiences, I already joined 2 times AUVSI SUAS Competition,
+          I am now a Master Student that completed my all lectures, I should start my master next October 2019 I am looking at a company for my master thesis.
         </Paragraph>
         <img id="mobilrobo" width="64" height="64" style={{ display: "none" }} src={require("../images/mobile.png")} alt="The Scream" />
         <img id="mobilroboFlip" width="64" height="64" style={{ display: "none" }} src={require("../images/mobileFlip.png")} alt="The Scream" />

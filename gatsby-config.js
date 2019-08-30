@@ -4,7 +4,7 @@ module.exports = {
     description: 'E&E Engineer,Ms.Eng Student-IT',
     author: '@uzmezfurkan',
     navLinks: [
-      { name: 'About Me', path: '/' },
+      { name: 'Motivation', path: '/' },
       { name: 'Experience', path: '/experience' },
       { name: 'Memories', path: '/memories' },
       { name: 'Warehouse', path: '/warehouse' },
