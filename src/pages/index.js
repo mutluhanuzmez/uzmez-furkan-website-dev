@@ -138,7 +138,7 @@ class Index extends React.Component {
         </div>
 
      <br />
-      <Anchor href="https://github.com/mutluhanuzmez/uzmez-furkan-website-dev/blob/master/src/pages/index.js ">Canvas Robot</Anchor>
+      <Anchor href="https://github.com/mutluhanuzmez/uzmez-furkan-website-dev/blob/master/src/pages/index.js ">Canvas-Robot </Anchor>
            <br />
 
         <Paragraph>
