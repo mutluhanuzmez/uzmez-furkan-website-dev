@@ -51,10 +51,10 @@ export default () => (
       </tr>
       <Bordered>
         <td>
-          <Img width="312rem" height="auto" src={re1}  />
+          
         </td>
         <td>
-          <Img width="200rem" height="auto" src={castle}  />
+         
         </td>
       </Bordered>
       <tr>
