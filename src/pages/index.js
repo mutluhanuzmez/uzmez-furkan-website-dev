@@ -1,12 +1,29 @@
 import React from 'react';
-
+import styled from 'styled-components';
 import SEO from '../components/SEO';
 import Paragraph from '../components/shared/Paragraph';
+import Subtitle from '../components/shared/Subtitle';
 import Anchor from '../components/shared/Anchor';
 import mobile from '../images/mobile.png'
 import mobileFlip from '../images/mobileFlip.png'
+import re1 from '../images/kamon.png';
+import re5 from '../images/kamonpre.png';
+import re4 from '../images/cabrio.png';
+import re2 from '../images/cabriopre.png';
+import re3 from '../images/predicorection.png';
+import re6 from '../images/predicorectionrslt.png';
+import ekip from '../images/ekip.jpg';
 import './index/index.css'
 
+const Img = styled.img`
+  margin-right: 1rem;
+
+  @media (max-width: ${props => props.theme.breakpoint}) {
+    margin: 0 auto 1rem;
+    display: block;
+    float: none;
+  }
+`;
 class Index extends React.Component {
   constructor() {
     super();
@@ -136,28 +153,80 @@ class Index extends React.Component {
           <menu>
           </menu>
         </div>
+      
+    
 
+    
+
+    
      <br />
       <Anchor href="https://github.com/mutluhanuzmez/uzmez-furkan-website-dev/blob/master/src/pages/index.js ">Canvas--Robot </Anchor>
            <br />
-
-        <Paragraph>
+           <Paragraph>
+          
           I already studied Embedded Systems, Embedded Security, Real Time Programming, Robotics and Advanced Control, Image and Signal Processing during my Master education.
+          I am already working on object classification and localization as a topic of my master thesis.
         </Paragraph>
+           <tr>
+        <td>
+         <Paragraph>
+            Video Frame
+            </Paragraph>
+        <Img width={312} height="auto" src={re3} alt="Collage of several pictures taken at meetups" />
+        </td>
+        <td>
+        <Paragraph>
+           Output:Auto
+            </Paragraph>
+          <Img width={312} height="auto" src={re6} alt="Collage of several pictures taken at meetups" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+         <Paragraph>
+            Sliding Window Results:
+            </Paragraph>
+        <Img width={312} height="auto" src={re5} alt="Collage of several pictures taken at meetups" />
+        </td>
+        <td>
+        <Paragraph>
+           Average:Truck
+            </Paragraph>
+          <Img width={312} height="auto" src={re1} alt="Collage of several pictures taken at meetups" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+         <Paragraph>
+            Sliding Window Results:
+            </Paragraph>
+        <Img width={312} height="auto" src={re2} alt="Collage of several pictures taken at meetups" />
+        </td>
+        <td>
+        <Paragraph>
+           Average:Auto
+            </Paragraph>
+          <Img width={312} height="auto" src={re4} alt="Collage of several pictures taken at meetups" />
+        </td>
+      </tr>
+       
+
+       
         <Paragraph>
           I can work for this subjects,
-        <li> Factory automation</li>
-          <li> Web Applications for robots, industrial systems</li>
+        <li>  Automation</li>
+          <li> Desktop and Web Applications for robots, industrial systems</li>
           <li> Robot Vision
         <ul>
-              <li>Color Detection</li>
+              <li>Object Recognition and Localization</li>
               <li>Material Sorting</li>
-              <li>Object Recognition</li>
+              
             </ul></li>
-          <li> Cryptography methods for Embedded system</li>
-          <li> Electrical Power System Design</li>
-          <li> Electrical Design(HomeAutomation /Solar Systems)</li>
         </Paragraph>
+        <tr>
+        <Subtitle>AUVSI SUAS - 2014 </Subtitle>
+      </tr>
+        <Img width={645} height="auto" src={ekip} alt="Collage of several pictures taken at meetups" />
       </div>
     )
   }

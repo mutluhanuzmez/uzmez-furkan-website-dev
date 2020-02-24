@@ -10,8 +10,8 @@ export default () => (
     I graduated from <em>Anadou University</em> in 2015. I have a
       Bachelor’s degree  in
       Electric & Electronic Engineering and now <strong>I  am Master student</strong> in
-      Information Technologies SRH Heidelberg University Germany. During my studies, I have interned at TUSAS Engine Industry,
-      They are program contributor for F35 and A400M CARGO,
+      Information Technologies SRH Heidelberg University Germany. During my studies, I have interned at TUSAS Engine Industry ,
+      They were program contributor for F35 and A400M CARGO,
 
     </Paragraph>
   <Paragraph>
@@ -32,9 +32,9 @@ export default () => (
 
     </Paragraph>
   <Paragraph>
-    After I graduated, I have worked as a electrical engineer for two
+    After I graduated, I have worked as an electrical engineer for two
       years at Limak, a construction company located in <strong>Ankara</strong>. I
-      also have <strong>worked in Cairo🌴 and Kuwait City🌴 Airport Construction Projects</strong> as a Electrical Engineer for
+      also have <strong>worked in Cairo🌴 and Kuwait City🌴 Airport Construction Projects</strong> for
        system integration and design <strong>.</strong>
 
   </Paragraph>
